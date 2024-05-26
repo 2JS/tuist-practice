@@ -2,6 +2,9 @@ import ProjectDescription
 
 let project = Project(
     name: "TuistPractice",
+    packages: [
+      .remote(url: "https://github.com/apple/swift-collections.git", requirement: .upToNextMajor(from: "1.1.0"))
+    ],
     targets: [
         .target(
             name: "TuistPractice",
