@@ -16,6 +16,9 @@ let project = Project(
             ),
             sources: ["TuistPractice/Sources/**"],
             resources: ["TuistPractice/Resources/**"],
+            scripts: [
+              .post(tool: "noti", name: "noti")
+            ],
             dependencies: []
         ),
         .target(
